@@ -31,7 +31,34 @@ a {
 }
 
 /*=================== NAV ===================*/
+nav {
+  display: flex;
+  padding: 17.5px 24px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2f4d76;
+}
+
+.logo {
+  display: inline-block;
+  margin-left: 100px;
+  
+}
+
+.buttons {
+  display: flex;
+  font-size: 15px;
+  gap: 50px;
+  margin-left: 200px;
+}
+
+.ri-shopping-cart-line{
+  margin-right: 150px;
+  color: white;
+}
 
 /*=================== MAIN ===================*/
+main{
 
+}
 /*=================== RESPONSIVE DESIGN ===================*/
