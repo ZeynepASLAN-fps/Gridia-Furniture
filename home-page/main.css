@@ -33,6 +33,7 @@ nav {
   padding: 17.5px 24px;
   justify-content: space-between;
   align-items: center;
+  background-color: #2f4d76;
 }
 
 .logo {
@@ -48,9 +49,97 @@ nav {
   margin-left: 200px;
 }
 
+.b1{
+  display: inline-block;
+  padding-bottom:2px;
+  background-image: linear-gradient(#FFD700 0 0);
+  background-position: 0 100%; /*OR bottom left*/
+  background-size: 0% 3px;
+  background-repeat: no-repeat;
+  transition:
+    background-size 0.3s,
+    background-position 0s 0.3s;
+}
+
+.b1:hover{
+  background-position: 100% 100%; /*OR bottom right*/
+  background-size: 100% 2px;
+}
+
+.b2{
+  display: inline-block;
+  padding-bottom:2px;
+  background-image: linear-gradient(#FFD700 0 0);
+  background-position: 0 100%; /*OR bottom left*/
+  background-size: 0% 3px;
+  background-repeat: no-repeat;
+  transition:
+    background-size 0.3s,
+    background-position 0s 0.3s;
+}
+
+.b2:hover{
+  background-position: 100% 100%; /*OR bottom right*/
+  background-size: 100% 2px;
+}
+
+.b3{
+  display: inline-block;
+  padding-bottom:2px;
+  background-image: linear-gradient(#FFD700 0 0);
+  background-position: 0 100%; /*OR bottom left*/
+  background-size: 0% 3px;
+  background-repeat: no-repeat;
+  transition:
+    background-size 0.3s,
+    background-position 0s 0.3s;
+}
+
+.b3:hover{
+  background-position: 100% 100%; /*OR bottom right*/
+  background-size: 100% 2px;
+}
+
+.b4{
+  display: inline-block;
+  padding-bottom:2px;
+  background-image: linear-gradient(#FFD700 0 0);
+  background-position: 0 100%; /*OR bottom left*/
+  background-size: 0% 3px;
+  background-repeat: no-repeat;
+  transition:
+    background-size 0.3s,
+    background-position 0s 0.3s;
+}
+
+.b4:hover{
+  background-position: 100% 100%; /*OR bottom right*/
+  background-size: 100% 2px;
+}
+
+.b5{
+  display: inline-block;
+  padding-bottom:2px;
+  background-image: linear-gradient(#FFD700 0 0);
+  background-position: 0 100%; /*OR bottom left*/
+  background-size: 0% 3px;
+  background-repeat: no-repeat;
+  transition:
+    background-size 0.3s,
+    background-position 0s 0.3s;
+}
+
+.b5:hover{
+  background-position: 100% 100%; /*OR bottom right*/
+  background-size: 100% 2px;
+}
+
+
 .ri-shopping-cart-line{
+  position: relative;
   margin-right: 150px;
   color: white;
+  font-size: 20px;
 }
 
 
