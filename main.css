@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/*=================== BASE ===================*/
+:root {
+  --blue: #2f4d76;
+  --yellow: #FFD700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", serif;
+  background-color: var(--blue);
+  color: #ffffff;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/*=================== NAV ===================*/
+nav {
+  display: flex;
+  padding: 17.5px 24px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2f4d76;
+}
+
+.logo {
+  display: inline-block;
+  margin-left: 100px;
+  
+}
+
+.buttons {
+  display: flex;
+  font-size: 15px;
+  gap: 50px;
+  margin-left: 200px;
+}
+
+.b1{
+  display: inline-block;
+  padding-bottom:2px;
+  background-image: linear-gradient(#FFD700 0 0);
+  background-position: 0 100%; /*OR bottom left*/
+  background-size: 0% 3px;
+  background-repeat: no-repeat;
+  transition:
+    background-size 0.3s,
+    background-position 0s 0.3s;
+}
+
+.b1:hover{
+  background-position: 100% 100%; /*OR bottom right*/
+  background-size: 100% 2px;
+}
+
+.b2{
+  display: inline-block;
+  padding-bottom:2px;
+  background-image: linear-gradient(#FFD700 0 0);
+  background-position: 0 100%; /*OR bottom left*/
+  background-size: 0% 3px;
+  background-repeat: no-repeat;
+  transition:
+    background-size 0.3s,
+    background-position 0s 0.3s;
+}
+
+.b2:hover{
+  background-position: 100% 100%; /*OR bottom right*/
+  background-size: 100% 2px;
+}
+
+.b3{
+  display: inline-block;
+  padding-bottom:2px;
+  background-image: linear-gradient(#FFD700 0 0);
+  background-position: 0 100%; /*OR bottom left*/
+  background-size: 0% 3px;
+  background-repeat: no-repeat;
+  transition:
+    background-size 0.3s,
+    background-position 0s 0.3s;
+}
+
+.b3:hover{
+  background-position: 100% 100%; /*OR bottom right*/
+  background-size: 100% 2px;
+}
+
+.b4{
+  display: inline-block;
+  padding-bottom:2px;
+  background-image: linear-gradient(#FFD700 0 0);
+  background-position: 0 100%; /*OR bottom left*/
+  background-size: 0% 3px;
+  background-repeat: no-repeat;
+  transition:
+    background-size 0.3s,
+    background-position 0s 0.3s;
+}
+
+.b4:hover{
+  background-position: 100% 100%; /*OR bottom right*/
+  background-size: 100% 2px;
+}
+
+.b5{
+  display: inline-block;
+  padding-bottom:2px;
+  background-image: linear-gradient(#FFD700 0 0);
+  background-position: 0 100%; /*OR bottom left*/
+  background-size: 0% 3px;
+  background-repeat: no-repeat;
+  transition:
+    background-size 0.3s,
+    background-position 0s 0.3s;
+}
+
+.b5:hover{
+  background-position: 100% 100%; /*OR bottom right*/
+  background-size: 100% 2px;
+}
+
+
+.ri-shopping-cart-line{
+  position: relative;
+  margin-right: 150px;
+  color: white;
+  font-size: 20px;
+}
+
+
+/*=================== MAIN ===================*/
+.main-content {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 100px;
+  margin-right: 200px;
+  margin-left: 120px;
+}
+
+.btn {
+  padding: 12px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #2f4d76;
+  color: lightgray;
+  border-color: lightgray;
+}
+
+.maincouch {
+  max-width: 700px;
+  position: absolute;
+  margin: auto;
+  bottom: 0;
+}
+
+.sus {
+  position: relative;
+  padding-bottom: 150px;
+  padding-left: 430px;
+}
+/*=================== RESPONSIVE DESIGN ===================*/

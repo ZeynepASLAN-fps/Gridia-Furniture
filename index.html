@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gridea Furniture</title>
+
+    <!--===================REMIXICON CSS===================-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!--===================MAIN CSS===================-->
+    <link rel="stylesheet" href="main.css" />
+  </head>
+
+  <body>
+    <!--===================NAVBAR===================-->
+    <nav>
+      <!--navbar kodları-->
+      <!-- navbar'ı div'lere ayırarak yapmak daha doğru olacaktır. kodun anlaşılırlığı ve kullanışlılığı artar.-->
+      <div  class = "logo"> <!-- Logo Division ( Logo Kümesi)-->
+        <a href = "../home-page/index.html"> <!-- a href ile logoya tıklayınca main-page'e yönlendirme yaptık -->
+          <img src = "../media/logo.png"> <!-- Logo'yu bu şekilde .html sayfasına aktardık.-->
+        </a>
+      </div>
+
+      <div class = "buttons">
+        <a href = "../home-page/index.html" class = "b1">Home</a>
+        <a href = ""  class = "b2">About Us</a>
+        <a href = "../shop-page/index.html"  class = "b3">Our Products</a>
+        <a href = ""  class = "b4">Blog</a>
+        <a href = "" class = "b5">Contact Us</a>
+      </div>
+
+      <i class="ri-shopping-cart-line"></i>
+    </nav>
+    <!--===================MAIN===================-->
+    <main>
+      <!--içerik kodları-->
+      <div class="main-content">
+        <div class="main-section">
+          <h1 id="main-title">Modern Interior<br>Design Studio</h1>
+          <br><br>
+          <p id="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+          Mairoes ex hic sit sint corrupti minus quam laudantium nulla <br>incidunt ipsum.</p> 
+          <br><br>
+          <button class="btn" onclick="shopNow()"
+      >Shop Now</button>
+        </div>
+    <div class="images">
+      <div class="sus">
+        <img   src="../media/ornament.png" alt="süs">
+      </div>
+      <img class="maincouch"  src="../media/main-couch.png" alt="main couch">     
+    </div>
+    
+  </div>
+    </main>
+  </body>
+</html>
