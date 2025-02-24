@@ -2,8 +2,11 @@
 
 /*=================== BASE ===================*/
 :root {
+  --dark-gray: #2f2f2f;
+  --light-gray: #6a6a6a;
   --blue: #2f4d76;
   --yellow: #FFD700;
+  --box-bgcolor: #70817b22;
 }
 
 * {
@@ -14,8 +17,8 @@
 
 body {
   font-family: "Inter", serif;
-  background-color: var(--blue);
-  color: #ffffff;
+  background-color: #EFF2F1;
+  color: var(--light-gray);
 }
 
 ul {
@@ -143,38 +146,110 @@ nav {
 }
 
 
-/*=================== MAIN ===================*/
-.main-content {
-  display: flex;
-  position: relative;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 100px;
-  margin-right: 200px;
-  margin-left: 120px;
-}
-
-.btn {
-  padding: 12px 30px;
-  font-size: 18px;
-  font-weight: bold;
-  border-radius: 10px;
-  cursor: pointer;
-  background-color: #2f4d76;
-  color: lightgray;
-  border-color: lightgray;
-}
-
-.maincouch {
-  max-width: 700px;
+#counter{
   position: absolute;
-  margin: auto;
-  bottom: 0;
+  bottom: -5px;
+  right: -5px;
+  width:15px;
+  height:15px;
+  font-size: 15px;
+  background-color: #FFD700;
+  border-radius: 50%;
+  display: flex; /* Centers the text horizontally and vertically */
+  justify-content: center; /* Centers horizontally */
+  align-items: center;
+  color:black;
 }
 
-.sus {
-  position: relative;
-  padding-bottom: 150px;
-  padding-left: 430px;
+
+/* -------slogan and presentation texts------- */
+.slogan{
+    padding-top: 100px;
+    font-style: normal;
+    text-align: center;
+}
+
+.header{
+  color: #2f2f2f;
+}
+
+.info{
+  font-style: normal;
+}
+
+/*-----------------Items------------------*/
+.items{
+  display: flex;
+  position: relative; 
+  justify-content: center; 
+  padding-top: 50px;
+  gap: 50px;
+  text-align: center;
+}
+
+.item1, .item2, .item3 {
+  position: relative; 
+  width: 250px; 
+  /*padding: 20px;*/
+  background-color: transparent;
+  border-radius: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.item1:hover, .item2:hover, .item3:hover {
+  transform: scale(1.05); 
+  background-color: #cacaca;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+}
+
+.item1 img, .item2 img, .item3 img {
+  width: 100%; 
+  height: auto; 
+  border-radius: 5px; 
+}
+
+.itemHeader{
+  font-style: normal;
+  margin-top: 15px;
+  margin-bottom: 7.5px;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.priceInfo{
+  font-style: normal;
+  color: #2f2f2f;
+  font-weight: 600;
+}
+
+.itemInfo{
+  font-style: italic;
+  margin: 10px 0;
+}
+
+.productbg1, .productbg2, .productbg3 {
+  position: absolute; /* absolute konumlandırma */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  background-color: transparent; /* Hafif siyah arka plan */
+  border-radius: 10px;
+  z-index: -1; /* Arka planı diğer içeriklerin altına yerleştir */
+}
+
+.ri-add-line{
+  border-radius: 40px;
+  font-size: 30px;
+  background-color: rgb(17, 17, 17);
+  color: #EFF2F1;
+  cursor: pointer;
+}
+
+
+/*=================== MAIN ===================*/
+main{
+
 }
 /*=================== RESPONSIVE DESIGN ===================*/
