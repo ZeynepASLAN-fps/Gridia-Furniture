@@ -42,7 +42,6 @@ nav {
 .logo {
   display: inline-block;
   margin-left: 100px;
-  
 }
 
 .buttons {
@@ -52,11 +51,11 @@ nav {
   margin-left: 200px;
 }
 
-.b1{
+.b1, .b2, .b3, .b4, .b5 {
   display: inline-block;
-  padding-bottom:2px;
+  padding-bottom: 2px;
   background-image: linear-gradient(#FFD700 0 0);
-  background-position: 0 100%; /*OR bottom left*/
+  background-position: 0 100%;
   background-size: 0% 3px;
   background-repeat: no-repeat;
   transition:
@@ -64,151 +63,80 @@ nav {
     background-position 0s 0.3s;
 }
 
-.b1:hover{
-  background-position: 100% 100%; /*OR bottom right*/
+.b1:hover, .b2:hover, .b3:hover, .b4:hover, .b5:hover {
+  background-position: 100% 100%;
   background-size: 100% 2px;
 }
 
-.b2{
-  display: inline-block;
-  padding-bottom:2px;
-  background-image: linear-gradient(#FFD700 0 0);
-  background-position: 0 100%; /*OR bottom left*/
-  background-size: 0% 3px;
-  background-repeat: no-repeat;
-  transition:
-    background-size 0.3s,
-    background-position 0s 0.3s;
-}
-
-.b2:hover{
-  background-position: 100% 100%; /*OR bottom right*/
-  background-size: 100% 2px;
-}
-
-.b3{
-  display: inline-block;
-  padding-bottom:2px;
-  background-image: linear-gradient(#FFD700 0 0);
-  background-position: 0 100%; /*OR bottom left*/
-  background-size: 0% 3px;
-  background-repeat: no-repeat;
-  transition:
-    background-size 0.3s,
-    background-position 0s 0.3s;
-}
-
-.b3:hover{
-  background-position: 100% 100%; /*OR bottom right*/
-  background-size: 100% 2px;
-}
-
-.b4{
-  display: inline-block;
-  padding-bottom:2px;
-  background-image: linear-gradient(#FFD700 0 0);
-  background-position: 0 100%; /*OR bottom left*/
-  background-size: 0% 3px;
-  background-repeat: no-repeat;
-  transition:
-    background-size 0.3s,
-    background-position 0s 0.3s;
-}
-
-.b4:hover{
-  background-position: 100% 100%; /*OR bottom right*/
-  background-size: 100% 2px;
-}
-
-.b5{
-  display: inline-block;
-  padding-bottom:2px;
-  background-image: linear-gradient(#FFD700 0 0);
-  background-position: 0 100%; /*OR bottom left*/
-  background-size: 0% 3px;
-  background-repeat: no-repeat;
-  transition:
-    background-size 0.3s,
-    background-position 0s 0.3s;
-}
-
-.b5:hover{
-  background-position: 100% 100%; /*OR bottom right*/
-  background-size: 100% 2px;
-}
-
-
-.ri-shopping-cart-line{
+.ri-shopping-cart-line {
   position: relative;
   margin-right: 150px;
   color: white;
   font-size: 20px;
 }
 
-
-#counter{
+#counter {
   position: absolute;
   bottom: -5px;
   right: -5px;
-  width:15px;
-  height:15px;
+  width: 15px;
+  height: 15px;
   font-size: 15px;
   background-color: #FFD700;
   border-radius: 50%;
-  display: flex; /* Centers the text horizontally and vertically */
-  justify-content: center; /* Centers horizontally */
+  display: flex;
+  justify-content: center;
   align-items: center;
-  color:black;
+  color: black;
 }
-
 
 /* -------slogan and presentation texts------- */
-.slogan{
-    padding-top: 100px;
-    font-style: normal;
-    text-align: center;
+.slogan {
+  padding-top: 100px;
+  font-style: normal;
+  text-align: center;
 }
 
-.header{
+.header {
   color: #2f2f2f;
 }
 
-.info{
+.info {
   font-style: normal;
 }
 
 /*-----------------Items------------------*/
-.items{
+.items {
   display: flex;
-  position: relative; 
-  justify-content: center; 
+  position: relative;
+  justify-content: center;
   padding-top: 50px;
   gap: 50px;
   text-align: center;
 }
 
 .item1, .item2, .item3 {
-  position: relative; 
-  width: 250px; 
+  position: relative;
+  width: 250px;
   padding: 20px;
   background-color: transparent;
   border-radius: 10px;
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .item1:hover, .item2:hover, .item3:hover {
-  transform: scale(1.05); 
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .item1 img, .item2 img, .item3 img {
-  width: 100%; 
-  height: auto; 
-  border-radius: 5px; 
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
 }
 
-.itemHeader{
+.itemHeader {
   font-style: normal;
   margin-top: 15px;
   margin-bottom: 7.5px;
@@ -216,39 +144,118 @@ nav {
   font-size: 18px;
 }
 
-.priceInfo{
+.priceInfo {
   font-style: normal;
   color: #2f2f2f;
   font-weight: 600;
 }
 
-.itemInfo{
+.itemInfo {
   font-style: italic;
   margin: 10px 0;
 }
 
 .productbg1, .productbg2, .productbg3 {
-  position: absolute; /* absolute konumlandırma */
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 80%;
-  background-color: transparent; /* Hafif siyah arka plan */
+  background-color: transparent;
   border-radius: 10px;
-  z-index: -1; /* Arka planı diğer içeriklerin altına yerleştir */
+  z-index: -1;
 }
 
-.ri-add-line{
+.ri-add-line {
   border-radius: 40px;
   font-size: 36px;
-  background-color: rgb(100,100,100);
+  background-color: rgb(100, 100, 100);
   color: #EFF2F1;
   cursor: pointer;
 }
 
-
-/*=================== MAIN ===================*/
-main{
-
-}
 /*=================== RESPONSIVE DESIGN ===================*/
+@media (max-width: 768px) {
+  /* Navbar */
+  nav {
+    padding: 10px;
+  }
+
+  .logo {
+    margin-left: 20px;
+  }
+
+  .buttons {
+    display: none; 
+  }
+
+  .ri-shopping-cart-line {
+    margin-right: 20px;
+  }
+
+  /* Slogan */
+  .slogan {
+    padding-top: 50px;
+  }
+
+  /* Items */
+  .items {
+    flex-direction: column; 
+    align-items: center;
+    gap: 20px;
+    padding-top: 30px;
+  }
+
+  .item1, .item2, .item3 {
+    width: 80%; 
+  }
+}
+
+@media (max-width: 480px) {
+  /* Navbar */
+  .logo {
+    margin-left: 10px;
+  }
+
+  .ri-shopping-cart-line {
+    margin-right: 10px;
+  }
+
+  /* Slogan */
+  .slogan {
+    padding-top: 30px;
+  }
+
+  .header {
+    font-size: 24px; 
+  }
+
+  .info {
+    font-size: 14px; 
+  }
+
+  /* Items */
+  .items {
+    gap: 15px;
+  }
+
+  .item1, .item2, .item3 {
+    width: 90%; 
+  }
+
+  .itemHeader {
+    font-size: 16px; 
+  }
+
+  .priceInfo {
+    font-size: 14px;
+  }
+
+  .itemInfo {
+    font-size: 12px; 
+  }
+
+  .ri-add-line {
+    font-size: 24px; 
+  }
+}
