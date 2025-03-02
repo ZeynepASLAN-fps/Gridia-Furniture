@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gridea Furniture</title>
+
+    <!--===================REMIXICON CSS===================-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!--===================MAIN CSS===================-->
+    <link rel="stylesheet" href="main.css" />
+  </head>
+
+  <body>
+    <!--===================NAVBAR===================-->
+    <nav>
+      <!--navbar kodları-->
+      <!-- navbar'ı div'lere ayırarak yapmak daha doğru olacaktır. kodun anlaşılırlığı ve kullanışlılığı artar.-->
+      <div  class = "logo"> <!-- Logo Division ( Logo Kümesi)-->
+        <a href = "../home-page/index.html"> <!-- a href ile logoya tıklayınca main-page'e yönlendirme yaptık -->
+          <img src = "../media/logo.png"> <!-- Logo'yu bu şekilde .html sayfasına aktardık.-->
+        </a>
+      </div>
+
+      <div class = "buttons">
+        <a href = "../home-page/index.html" class = "b1">Home</a>
+        <a href = "../about-us/index.html"  class = "b2">About Us</a>
+        <a href = "../shop-page/index.html"  class = "b3">Our Products</a>
+        <a href = "../blog/index.html"  class = "b4">Blog</a>
+        <a href = "../contact-us/" class = "b5">Contact Us</a>
+      </div>
+
+      <i class="ri-shopping-cart-line">
+        <span id = "counter">0</span>
+      </i>
+    </nav>
+    
+    <!-- shop page informations -->
+    
+    <!--===================MAIN===================-->
+    <main>
+      <!--içerik kodları-->
+      <div class = "slogan">
+        <h1 class = "header">Crafted with excellent material.</h1>
+          <br>
+        <i class = "info">Furni's finest furniture is here, combining style and comfort. All pieces are in stock and ready to elevate your space!</i>
+      </div>
+      <!-- items -->
+      <div class = "items">
+          <div class = "item1">
+              <img src = "../media/nordic-chair.png" width = "250" height = "250">
+              <p class = "itemHeader">Nordic Chair</p>
+              <p class = "priceInfo">$50.00</p>
+              <p class = "itemInfo">Feel yourself home.</p>
+              <div class = productbg1></div>
+              <i class="ri-add-line"></i>
+          </div>
+          <div class = "item2">
+              <img src = "../media/kruzo-area-chair.png" width = "250" height = "250">
+              <p class = "itemHeader">Kruzo Area Chair</p>
+              <p class = "priceInfo">$78.00</p>
+              <p class = "itemInfo">Vintage. Cozy. Fancy.</p>
+              <div class = productbg2></div>
+              <i class="ri-add-line"></i>
+
+          </div>
+          <div class = "item3">
+              <img src = "../media/ergonomic-chair.png" width = "250" height = "250">     
+              <p class = "itemHeader">Ergonomic Chair</p>    
+              <p class = "priceInfo">$43.00</p>      
+              <p class = "itemInfo">Bring modernity.</p>
+              <div class = productbg3></div>
+              <i class="ri-add-line"></i>
+          </div>
+      </div>
+    </main>
+
+    <!--===================MAIN JS===================-->
+    <script src="../shop-page/script.js"></script>
+  </body>
+</html>
